@@ -1,0 +1,1 @@
+ C:\\dev\\idols-publique\\idols-launcher\\.dart_tool\\flutter_build\\59bd2b37885cea902b22fa4c96e1e2ce\\native_assets.json: 

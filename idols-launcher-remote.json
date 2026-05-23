@@ -1,0 +1,11 @@
+{
+  "updated_at": "2026-05-23T21:06:32.6985944Z",
+  "backend_api_url": "https://median-addition-economic-apps.trycloudflare.com",
+  "launcher": {
+    "latest_version": "1.0.11",
+    "download_url": "",
+    "github_repo": "hqnatx/idols-launcher",
+    "auto_update": true,
+    "notes": ""
+  }
+}

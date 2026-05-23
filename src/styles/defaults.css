@@ -1,0 +1,138 @@
+button.default {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.15rem;
+  font-weight: 800;
+  font-family: var(--font-body);
+  color: #000;
+  cursor: pointer;
+  min-height: max-content;
+  outline: none;
+  border: none;
+  border-radius: 0.3rem;
+  background-color: #e0e0e0;
+  backdrop-filter: blur(0.5rem);
+  transition: background-color 80ms, filter 100ms;
+}
+
+button.default.setting {
+  border-radius: 0;
+  background-color: #ffffff0c;
+  color: #ffffff;
+  border: 1px solid #ffffff0c;
+  font-weight: 500;
+}
+
+button.default.setting:hover {
+  background-color: #ffffff2a;
+}
+
+/* Tous les boutons d’action colorés → violet idols */
+button.default.purple,
+button.default.red,
+button.default.green,
+button.default.orange,
+button.default.discord,
+button.default.custom {
+  color: #fff;
+  font-weight: 700;
+  font-family: var(--font-body);
+  text-transform: uppercase;
+  background-color: var(--idols-purple);
+  background-image: var(--idols-purple-gradient);
+  min-height: 2.55rem;
+  text-indent: 0.5rem;
+  transition: filter 100ms, box-shadow 100ms;
+}
+
+button.default.purple:hover,
+button.default.red:hover,
+button.default.green:hover,
+button.default.orange:hover,
+button.default.discord:hover,
+button.default.custom:hover {
+  background-color: var(--idols-purple);
+  filter: hue-rotate(5deg) brightness(1.05);
+}
+
+button.default.purple:disabled,
+button.default.red:disabled,
+button.default.green:disabled,
+button.default.orange:disabled,
+button.default.discord:disabled,
+button.default.custom:disabled {
+  background-color: #36485c;
+  color: #ffffffbb;
+  cursor: not-allowed;
+  text-indent: 0;
+  background-image: var(--idols-purple-gradient) !important;
+  filter: none !important;
+}
+
+button.default.red.blur,
+button.default.green.blur {
+  background-color: color-mix(in srgb, var(--idols-purple) 60%, transparent);
+}
+
+button.default.red.blur:hover,
+button.default.green.blur:hover {
+  background-color: color-mix(in srgb, var(--idols-purple) 75%, transparent);
+}
+
+button.default.red.blur:disabled,
+button.default.green.blur:disabled {
+  background-color: color-mix(in srgb, var(--idols-purple) 55%, transparent);
+}
+
+button.default:disabled:not(.purple):not(.red):not(.green):not(.orange):not(
+    .discord
+  ):not(.custom) {
+  background-color: #36485c;
+  color: #ffffffbb;
+  cursor: not-allowed;
+  text-indent: 0.5rem;
+}
+
+button.default.blur:hover {
+  background-color: #ffffff40;
+}
+
+button.default.blur:disabled {
+  background-color: #ffffff20;
+}
+
+button.default .leftIcon {
+  position: absolute;
+  left: 0rem;
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+button.default .leftIcon.hide svg {
+  fill: #ffffffcc;
+}
+
+/* Boutons d’action dans les paramètres (ex. dossier Fortnite) */
+button.default.purple.setting,
+button.default.setting.idolsAction {
+  border-radius: 0.3rem;
+  border: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: var(--idols-purple-gradient);
+  color: #fff;
+}
+
+button.default.purple.setting:hover,
+button.default.setting.idolsAction:hover {
+  background-color: var(--idols-purple);
+  background-image: var(--idols-purple-gradient);
+  filter: hue-rotate(5deg) brightness(1.05);
+}

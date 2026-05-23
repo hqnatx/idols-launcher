@@ -1,0 +1,91 @@
+.homepageAdvert {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-radius: 0.35rem;
+  padding: 0.75rem;
+  background-color: #00000020;
+  min-height: 12rem;
+}
+
+.homepageAdvert.ult {
+  background-image: radial-gradient(circle, #e49a46, #ff7b00);
+}
+
+/* // purple/pink */
+.homepageAdvert.crystal {
+  background-image: radial-gradient(circle, #8f4ef7, #b346e7);
+}
+
+span.sale {
+  font-size: 1.1rem;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.homepageAdvert.ult span.sale {
+  color: #ffbf76;
+}
+
+.homepageAdvert.crystal span.sale {
+  color: #ff76ddda;
+}
+
+.homepageAdvert h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #ffffff;
+  z-index: 1;
+  text-shadow: 0 0 1rem #fabef088;
+}
+
+.homepageAdvert img.image {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+}
+
+.homepageAdvert .buy {
+  all: unset;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  gap: 0.35rem;
+  padding: 0.65rem 1rem;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 0.45rem;
+  backdrop-filter: blur(0.25rem);
+  background-image: var(--idols-purple-gradient);
+  transition: scale 50ms, filter 100ms;
+}
+
+.homepageAdvert .buy span {
+  gap: 0.2rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.homepageAdvert .buy:hover {
+  filter: brightness(1.08);
+}
+
+.homepageAdvert .buy:active {
+  scale: 0.95;
+}

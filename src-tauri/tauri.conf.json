@@ -1,0 +1,54 @@
+{
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "npm run build",
+    "devPath": "http://localhost:1420",
+    "distDir": "../dist"
+  },
+  "package": {
+    "productName": "idols launcher",
+    "version": "1.0.11"
+  },
+  "tauri": {
+    "allowlist": {
+      "all": true,
+      "protocol": {
+        "all": true,
+        "assetScope": ["*/**"]
+      },
+      "fs": {
+        "all": true,
+        "scope": ["*/**"]
+      }
+    },
+    "windows": [
+      {
+        "fullscreen": false,
+        "maximizable": false,
+        "resizable": true,
+        "title": "idols launcher",
+        "decorations": false,
+        "center": true,
+        "transparent": true,
+        "minWidth": 400,
+        "minHeight": 530
+      }
+    ],
+    "security": {
+      "csp": null
+    },
+    "bundle": {
+      "active": true,
+      "targets": "all",
+      "identifier": "hqnata.idols.launcher",
+      "icon": [
+        "icons/32x32.png",
+        "icons/128x128.png",
+        "icons/128x128@2x.png",
+        "icons/icon.icns",
+        "icons/icon.ico"
+      ],
+      "resources": []
+    }
+  }
+}
